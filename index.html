@@ -3,337 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalyst Education | Accelerating Academic Success | HSC Tutoring by Ben & Sam</title>
+    <title>Catalyst Tutors | Accelerating Academic Success | HSC Tutoring by Ben & Sam</title>
     <meta name="description" content="Accelerating academic potential with personalized HSC tutoring. 95% of students improve by one band or more with our proven methods.">
 <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="components/testimonial-card.js"></script>
+<script src="components/testimonial-card.js"></script>
 </head>
 <body class="bg-gray-50">
-    <custom-navbar></custom-navbar>
-
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-20 md:py-32 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Accelerate Your Academic Success</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Catalyze your learning with personalized tutoring from Ben & Sam</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-white text-blue-700 hover:bg-blue-50 px-8 py-3 rounded-full font-semibold text-lg transition duration-300 shadow-lg">Book Free Consultation</a>
-                <a href="#subjects" class="border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-3 rounded-full font-semibold text-lg transition duration-300">Our Subjects</a>
-            </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform skew-y-1 -mb-8"></div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="p-6">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">95%</div>
-                    <p class="text-gray-600">Students improve by one band or more</p>
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-800">Catalyst Tutors</a>
                 </div>
-                <div class="p-6">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
-                    <p class="text-gray-600">Years combined experience</p>
-                </div>
-                <div class="p-6">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">100%</div>
-                    <p class="text-gray-600">Personalized lesson plans</p>
-                </div>
-                <div class="p-6">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">24h</div>
-                    <p class="text-gray-600">Response guarantee</p>
-                </div>
-            </div>
-            <div class="mt-12 text-center">
-                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md">Book Your Free Consultation →</a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="/" class="text-blue-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#meet-the-tutors" class="text-gray-600 hover:text-blue-600 px-3 py-2 font-medium" onclick="document.getElementById('meet-the-tutors').scrollIntoView({behavior: 'smooth'})">Our Tutors</a>
+<a href="#subjects" class="text-gray-600 hover:text-blue-600 px-3 py-2 font-medium">Our Subjects</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300">Book Now</a>
 </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-blue-800">Home</a>
+                        <a href="#meet-the-tutors" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600" onclick="document.getElementById('meet-the-tutors').scrollIntoView({behavior: 'smooth'})">Our Tutors</a>
+<a href="#subjects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600">Our Subjects</a>
+<a href="#contact" class="block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg font-medium mt-2">Book Now</a>
+            </div>
+        </div>
+    </nav>
+<!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-blue-950 to-blue-900 text-white pt-40 pb-32 px-4">
+<div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight">Academic Excellence,<br>Personalized for You</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">Proven tutoring methods from New South Wales' top-performing graduates</p>
+        </div>
+</section>
+<!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Flexible tutoring options tailored to your learning style</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 rounded-xl p-8 border border-blue-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-blue-700">1-on-1 Sessions</h3>
+                        <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-bold">$80/hour</div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">60 minute personalized sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Tailored to your specific needs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Flexible scheduling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Undivided tutor attention</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 text-center">
+                        <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md">Book 1-on-1 Session</a>
+                    </div>
+                </div>
+                
+                <div class="bg-indigo-50 rounded-xl p-8 border border-indigo-100">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-indigo-700">Group Sessions</h3>
+                        <div class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full font-bold">$100/student</div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-indigo-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">90 minute interactive sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-indigo-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Small groups (4-8 students)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-indigo-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Collaborative learning environment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-indigo-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700">Great for peer learning</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 text-center">
+                        <a href="#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 shadow-md">Join Group Session</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-<!-- About Section -->
-    <section class="py-20 bg-gray-50">
+<!-- Meet The Tutors Section -->
+    <section id="meet-the-tutors" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Your Tutors</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ben and Sam bring passion, expertise, and proven results to every session</p>
-            </div>
+                            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ben, Sam, and Cara bring passion, expertise, and proven results to every session</p>
+                           
+</div>
             
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
-                        <img src="Ben profile.jpg" alt="Ben - HSC Tutor" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-<div>
-                            <h3 class="text-2xl font-bold text-gray-800">Ben</h3>
-</div>
-                    </div>
-                    <p class="text-gray-600 mb-4">With a predicted 99 ATAR and top internal ranks in Business Studies (1st), PDHPE (2nd), Biology (2nd), Enterprise Computing (2nd), Maths Advanced (3rd) and English Advanced (9th) I bring fresh, high-achieving perspectives to tutoring. My approach focuses on building confidence through structured learning and practical application.</p>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Highly skilled in short answer writing across all subjects</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Maths problem solving specialist</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Prior tutoring experience in maths</span></li>
-                    </ul>
-</div>
-                
-                <div class="bg-white p-8 rounded-xl shadow-lg">
-                    <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
-                        <img src="Sam profile.jpg" alt="Sam - HSC Tutor" class="w-32 h-32 rounded-full object-cover border-4 border-blue-100">
-<div>
-                            <h3 class="text-2xl font-bold text-gray-800">Sam</h3>
-</div>
-                    </div>
-                    <p class="text-gray-600 mb-4">With a predicted 98 ATAR and top internal ranks in Maths Advanced (9th), Maths Extension 1 (2nd), English Advanced (9th), Business Studies (4th, trial mark 95), PDHPE (5th), and Religion (trial mark 48/50), I bring a proven track record of academic excellence across diverse subjects.</p>
-                    <ul class="space-y-2">
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Skilled writer in English and Religion</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Great communicator and problem solver</span></li>
-                        <li class="flex items-center"><i data-feather="check" class="text-green-500 mr-2"></i> <span>Prior tutoring experience in maths</span></li>
-                    </ul>
-</div>
-            </div>
-        </div>
-    </section>
-    <!-- Subjects Section -->
-    <section id="subjects" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Subjects</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive support across all major HSC disciplines</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon">
-                                <i data-feather="book"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-center">English</h3>
-                            <p class="text-sm text-gray-500 mt-2">Advanced & Standard</p>
+            <div class="relative">
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="tutor-card">
+                        <div class="tutor-photo-container">
+                            <img src="http://static.photos/people/640x360/101" alt="Ben" class="tutor-photo-sphere">
                         </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Ben</div>
-                            <div class="tutor-badge mt-2">Sam</div>
-<p class="text-sm text-center">Analytical writing techniques and literary confidence building</p>
-<button class="subject-card-btn">Learn More</button>
+                        <div class="tutor-info">
+<h3 class="text-2xl font-bold text-gray-800">Ben</h3>
+                            <p class="text-blue-600 font-medium mb-4">ATAR: 97.80 | NESA All Rounder</p>
+                            <p class="text-gray-700">Ben brings a structured, methodical approach to tutoring with 5 years experience helping students unlock their potential.</p>
+                            <p class="text-sm text-gray-500 mt-4 mb-2">Subjects taught:</p>
+                            <div>
+<span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mr-2">English Adv/Sta</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mr-2">Maths Adv</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">PDHPE</span>
+                                
+                                <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Business</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Biology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card">
+                        <div class="tutor-photo-container" style="background: linear-gradient(to bottom, #6366f1, #4f46e5);">
+                            <img src="http://static.photos/people/640x360/102" alt="Sam" class="tutor-photo-sphere">
+                        </div>
+                        <div class="tutor-info">
+<h3 class="text-2xl font-bold text-gray-800">Sam</h3>
+                            <p class="text-indigo-600 font-medium mb-4">ATAR: 96.45 | NESA All Rounder</p>
+                            <p class="text-gray-700">Sam specializes in making complex STEM concepts accessible with real-world applications and problem-solving techniques.</p>
+                            <p class="text-sm text-gray-500 mt-4 mb-2">Subjects taught:</p>
+                            <div>
+<span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium mr-2">Maths Adv/Ext 1</span>
+                                <span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium mr-2">PDHPE</span>
+                                <span class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Religion</span>
+                                <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Business</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tutor-card">
+                        <div class="tutor-photo-container" style="background: linear-gradient(to bottom, #8b5cf6, #7c3aed);">
+                            <img src="http://static.photos/people/640x360/103" alt="Cara" class="tutor-photo-sphere">
+                        </div>
+                        <div class="tutor-info">
+<h3 class="text-2xl font-bold text-gray-800">Cara</h3>
+                            <p class="text-purple-600 font-medium mb-4">ATAR: 98.80 | NESA All Rounder | State Rank 10th in Ancient History</p>
+                            <p class="text-gray-700">Cara helps students develop critical thinking and analytical writing skills for humanities subjects.</p>
+                            <p class="text-sm text-gray-500 mt-4 mb-2">Subjects taught:</p>
+                            <div>
+<span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mr-2">English Adv/Ext 1</span>
+                                <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium mr-2">Ancient History</span>
+                                <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Legal Studies</span>
+                                <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">PDHPE</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon">
-                                <i data-feather="percent"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-center">Mathematics</h3>
-                            <p class="text-sm text-gray-500 mt-2">Advanced & Extension 1</p>
-                        </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Ben (Advanced)</div>
-                            <div class="tutor-badge mt-2">Sam (Advanced & Ext 1)</div>
-<p class="text-sm text-center">Conceptual mastery through problem breakdowns</p>
-<button class="subject-card-btn">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon">
-                                <i data-feather="activity"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-center">PDHPE</h3>
-                            <p class="text-sm text-gray-500 mt-2">Complete syllabus coverage</p>
-                        </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Ben</div>
-                            <div class="tutor-badge mt-2">Sam</div>
-<p class="text-sm text-center">Applied learning and syllabus-focused strategy</p>
-                            <button class="subject-card-btn">Learn More</button>
 </div>
-                    </div>
-                </div>
-
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon">
-                                <i data-feather="briefcase"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-center">Business Studies</h3>
-                            <p class="text-sm text-gray-500 mt-2">Writing technique</p>
-                        </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Ben</div>
-<div class="tutor-badge">Sam</div>
-<p class="text-sm text-center">Real-world business applications and financial mastery</p>
-                            <button class="subject-card-btn">Learn More</button>
-</div>
-                    </div>
-                </div>
-
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon" style="color: #3b82f6;">
-                                <i data-feather="dna"></i>
-                            </div>
-<h3 class="text-xl font-bold text-center">Biology</h3>
-                            <p class="text-sm text-gray-500 mt-2">Scientific writing focus</p>
-                        </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Ben</div>
-<p class="text-sm text-center">Visual learning techniques for complex concepts</p>
-                            <button class="subject-card-btn">Learn More</button>
-</div>
-                    </div>
-                </div>
-
-                <div class="subject-card" tabindex="0" onclick="this.classList.toggle('flipped')">
-                    <div class="subject-card-inner">
-                        <div class="subject-card-front">
-                            <div class="subject-icon">
-                                <i data-feather="compass"></i>
-                            </div>
-                            <h3 class="text-xl font-bold text-center">Religion</h3>
-                            <p class="text-sm text-gray-500 mt-2">Ethics & philosophy</p>
-                        </div>
-                        <div class="subject-card-back">
-                            <div class="tutor-badge">Sam</div>
-<p class="text-sm text-center">Critical thinking and philosophical analysis</p>
-                            <button class="subject-card-btn">Learn More</button>
-</div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <script>
-        // Add keyboard accessibility for flip cards
-        document.querySelectorAll('.subject-card').forEach(card => {
-            card.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    card.classList.toggle('flipped');
-                }
-            });
-        });
-    </script>
 <!-- CTA Section -->
-<section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-indigo-800 text-white">
-        <div class="max-w-6xl mx-auto px-4 text-center">
+<section id="contact" class="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+<div class="max-w-6xl mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Spark Your Potential?</h2>
             <p class="text-xl mb-8 max-w-3xl mx-auto">Book your free 30-minute consultation to discuss your goals and our approach</p>
-            
-            <form id="contact-form" class="max-w-lg mx-auto bg-white rounded-xl p-8 shadow-lg text-gray-800">
-    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">Book a Free Consultation</h2>
-
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label for="name" class="block text-left mb-2 font-medium">Your Name</label>
-        <input type="text" id="name" name="name" required
-          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-      </div>
-      <div>
-        <label for="email" class="block text-left mb-2 font-medium">Email</label>
-        <input type="email" id="email" name="email" required
-          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-      </div>
-    </div>
-
-    <div class="mb-6">
-      <label for="subject" class="block text-left mb-2 font-medium">Subject Interest</label>
-      <select id="subject" name="subject" required
-        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-        <option value="">Select a subject</option>
-        <option value="english-advanced">English Advanced</option>
-        <option value="english-standard">English Standard</option>
-        <option value="maths-advanced">Maths Advanced</option>
-        <option value="maths-ext1">Maths Extension 1</option>
-        <option value="bio">Biology</option>
-        <option value="pdhpe">PDHPE</option>
-        <option value="business">Business Studies</option>
-        <option value="religion">Religion</option>
-      </select>
-    </div>
-
-    <div class="mb-6">
-      <label for="phone" class="block text-left mb-2 font-medium">Phone Number</label>
-      <input type="tel" id="phone" name="phone"
-        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-    </div>
-
-    <div class="mb-6">
-      <label for="message" class="block text-left mb-2 font-medium">Your Goals</label>
-      <textarea id="message" name="message" rows="4"
-        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-    </div>
-
-    <button type="submit"
-      class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md">
-      Book Free Consultation
-    </button>
-
-    <p id="responseMessage" class="mt-4 text-center text-sm"></p>
-  </form>
-
-  <script>
-    const form = document.getElementById('contact-form');
-    const responseMsg = document.getElementById('responseMessage');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      responseMsg.textContent = '⏳ Submitting...';
-      responseMsg.className = 'mt-4 text-center text-blue-600 text-sm';
-
-      const formData = new FormData(form);
-
-      fetch('https://script.google.com/macros/s/AKfycbwM-nW3Z7Bk9dWc8CIgGacjQ36weLUccgX_vwf_5yeR7h-4J08MhVHrsFpcJVUFsmXw/exec', {
-        method: 'POST',
-        body: formData
-      })
-      .then(res => {
-        if (!res.ok) throw new Error('Network response was not ok');
-        return res.json();
-      })
-      .then(data => {
-        if (data.result === 'success') {
-          responseMsg.textContent = '✅ Your consultation request has been submitted successfully!';
-          responseMsg.className = 'mt-4 text-center text-green-600 text-sm';
-          form.reset();
-        } else {
-          responseMsg.textContent = '❌ Error: ' + data.message;
-          responseMsg.className = 'mt-4 text-center text-red-600 text-sm';
-        }
-      })
-      .catch(err => {
-        responseMsg.textContent = '⚠️ Error submitting form: ' + err.message;
-        responseMsg.className = 'mt-4 text-center text-red-600 text-sm';
-      });
-    });
-  </script>
+            <form class="max-w-lg mx-auto bg-white/90 rounded-xl p-8 shadow-lg text-gray-800 backdrop-blur-sm">
+<div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-left mb-2 font-medium">Your Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left mb-2 font-medium">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="subject" class="block text-left mb-2 font-medium">Subject Interest</label>
+                    <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                        <option value="">Select a subject</option>
+                        <option value="english-advanced">English Advanced</option>
+                        <option value="english-standard">English Standard</option>
+                        <option value="maths-advanced">Maths Advanced</option>
+                        <option value="maths-ext1">Maths Extension 1</option>
+                        <option value="bio">Biology</option>
+                        <option value="pdhpe">PDHPE</option>
+                        <option value="business">Business Studies</option>
+                        <option value="religion">Religion</option>
+</select>
+                </div>
+                <div class="mb-6">
+                    <label for="phone" class="block text-left mb-2 font-medium">Phone Number</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                
+                <div class="mb-6">
+                    <label for="message" class="block text-left mb-2 font-medium">Your Goals</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+<button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 shadow-md">Book Free Consultation</button>
+</form>
         </div>
     </section>
     <success-modal></success-modal>
-    <script>
-        feather.replace();
-        
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const successModal = document.querySelector('success-modal');
-            successModal.show();
-            this.reset();
-        });
-    </script>
-    <custom-footer></custom-footer>
+<footer>
+      <style>
+        footer {
+          background: #1e293b;
+          color: white;
+          padding: 3rem 1rem;
+          text-align: center;
+        }
+        .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .footer-links {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          margin: 1.5rem 0;
+          flex-wrap: wrap;
+        }
+        .footer-links a {
+          color: #e2e8f0;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        .footer-links a:hover {
+          color: #60a5fa;
+        }
+        .copyright {
+          margin-top: 2rem;
+          color: #94a3b8;
+          font-size: 0.875rem;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 1rem;
+          margin: 1.5rem 0;
+        }
+        .social-icons a {
+          color: white;
+          transition: color 0.2s;
+        }
+        .social-icons a:hover {
+          color: #60a5fa;
+        }
+      </style>
+      <div class="footer-content">
+        <h3>Catalyst Tutors</h3>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/success-stories.html">Tutors</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+        </div>
+        <p class="copyright">© 2025 Catalyst Tutors. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
     <script src="components/success-modal.js"></script>
 </body>
 </html>
+
 
 
